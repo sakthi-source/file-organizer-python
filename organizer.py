@@ -21,4 +21,8 @@ for file in files:
             os.makedirs(folder_path + "/Music", exist_ok=True)
             shutil.move(file_path, folder_path + "/Music/" + file)
 
+        elif file.endswith(".mp4"):
+            os.makedirs(folder_path + "/videos",exist_ok=true)
+            shutil.move(file_path,folder_path + "/videos/" + file)
+            
 print("Files organized successfully")
